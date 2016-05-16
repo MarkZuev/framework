@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+  <div id="page">
+    <div id="page-top">
+      <div id="page-bottom">
+        <div id="header">
+          {% include 'blocks/header.html.twig' %}
+          {% include 'blocks/admin.html.twig' %}
+        </div>
+        <div id="main">
+          <div id="sidebar">
+            {% include 'blocks/sidebar.html.twig' %}
+          </div>
+          <div id="content">
+            {% block content %}
+            {% endblock %}
+          </div>
+          <div class="clear"></div>
+        </div>
+        <div id="footer">
+        {%  include 'blocks/footer.html.twig' %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}

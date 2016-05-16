@@ -1,0 +1,15 @@
+<ul>
+    {% for page in pages %}
+        <li class="page_item">
+            <a href="{{ path('show_page', {url: page.url|slice(1)}) }}">
+                {{ page.name }}
+            </a>
+        </li>
+    {% else %}
+        <li>
+            <a href="/'">
+                Главная
+            </a>
+        </li>
+    {% endfor %}
+</ul>

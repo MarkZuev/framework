@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{% block title %}business{% endblock %}</title>
+    {% block stylesheets %}
+        <link media="screen" rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+        <link media="screen" rel="stylesheet" href="{{ asset('css/style_ie.css') }}"/>
+    {% endblock %}
+    <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}"/>
+</head>
+<body>
+{% block body %}{% endblock %}
+{% block javascripts %}
+{% endblock %}
+</body>
+</html>

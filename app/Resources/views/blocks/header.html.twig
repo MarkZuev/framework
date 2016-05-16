@@ -1,0 +1,18 @@
+<div id="header-info">
+  <h1>Furn Office</h1>
+  <div class="description">Free CSS Website Template</div>
+</div>
+  <div id="header-menu">
+    {% render(controller('AppBundle:Default:menu')) %}
+  </div>
+  <div id="header-search">
+    <form method="get" id="searchform" action="">
+      <input type="text" value="Search: Type text and hit enter!" 
+      onfocus="if (this.value == 'Search: Type text and hit enter!') 
+      {this.value = '';}" onblur="if (this.value == '') 
+      {this.value = 'Search: Type text and hit enter!';}" name="s" id="s" />
+      <input type="submit" id="searchsubmit" value="" />
+    </form>
+  </div>
+  <div id="header-feed"> <img src="{{ asset('images/blank.gif') }}" alt="" width="66" height="66" /> 
+</div>
